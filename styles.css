@@ -1,0 +1,42 @@
+.navbar-color {
+  background-color: #151f68;
+}
+.content-bg-1 {
+  background: linear-gradient(180deg, #152582 0%, #152582 100%);
+}
+
+.content-bg-img-1 {
+  width: 100%;
+  height: 60rem;
+}
+.content-logo-img-1 {
+  margin-top: 550px;
+  width: 100%;
+  height: 100%;
+}
+.content-logo-img-2 {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.content-logo-img-3 {
+  margin-right: 300px;
+}
+
+.content-text-header-1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 37px;
+  color: white;
+  margin-left: 15rem;
+  margin-bottom: 4rem;
+}
+
+.img-part-1 {
+  width: 50%;
+  bottom: 10000px;
+  background-color: aquamarine;
+}
