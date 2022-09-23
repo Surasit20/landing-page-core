@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
+    <script src="script.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
     </style>
@@ -25,6 +26,7 @@
                 <a class="navbar-brand" href="#">
                     <img src=".\images/logo/logo2.png" alt="" width="192" height="39"
                         class="d-inline-block align-text-top">
+
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,37 +54,41 @@
         <div class="position-relative">
             <img src="./images/part-1/bg1.png" class="content-bg-img-1">
 
-            <div class="position-absolute top-0 start-50 translate-middle">
-                <img src="./images/logo/Group 4 1.png" class="content-logo-img-1">
+            <div class="position-absolute top-0 start-50 translate-middle d-inline">
+                <img src="./images/logo/Group 4 1.png" class="content-logo-img-1 d-inline">
             </div>
+            <div class="position-absolute top-50 start-50 translate-middle mt-4 " id="component3">
+                <span class="auto-type text-white mt-5 fs-5"></span>
+            </div>
+
             <div class="position-absolute top-0 end-0">
-                <img src="./images/part-1/Group (1).png" class="content-logo-img-2">
+                <img src="./images/part-1/Group (1).png" class="content-logo-img-2" id="component1">
             </div>
 
-            <div class="position-absolute bottom-0 start-0 mt-5 content-text-header-1 ">
-
+            <div class="position-absolute bottom-0 start-0 mt-5 content-text-header-1 fs-1" id="text-context">
                 <div class="mt-5">
                     <p> บริษัท คอร์ แอสเซท จำกัด </p>
-                    <div class="fs-3">
+                    <div class="fs-5">
                         <span>{</span>
                         <span style="color: rgba(255, 206, 33, 1);">ผู้นำด้านเทคโนโลยี</span>
                         <span style="color: rgba(255, 117, 228, 1);">บริหารจัดการ</span>
                         <span>ดิจิตอลแอสเซท}</span>
                     </div>
-                    <p class="fs-6" ">
-                            พื้นที่จัดเก็บข้อมูล ให้กับแพลตฟอร์ม<br> หรือแอพพลิเคชั่นตามความต้องการของผู้ใช้งานกลุ่มเฉพาะ<br>
-                            ปลดล็อคข้อจำกัดต่างๆ ด้วยเทคโนโลยีบริหารที่มีความยืดหยุ่น รองรับการใช้งาน<br>
-                            เพิ่มประสิทธิภาพการทำงานสูงสุดและความปลอดภัย<br>
-                            ที่เชื่อมโยงผู้ใช้งานเข้าด้วยกันได้อย่างไร้รอยต่อตลอด 24 ชม.<br>
+                    <p class="fs-6">
+                        พื้นที่จัดเก็บข้อมูล ให้กับแพลตฟอร์ม<br>
+                        หรือแอพพลิเคชั่นตามความต้องการของผู้ใช้งานกลุ่มเฉพาะ<br>
+                        ปลดล็อคข้อจำกัดต่างๆ ด้วยเทคโนโลยีบริหารที่มีความยืดหยุ่น รองรับการใช้งาน<br>
+                        เพิ่มประสิทธิภาพการทำงานสูงสุดและความปลอดภัย<br>
+                        ที่เชื่อมโยงผู้ใช้งานเข้าด้วยกันได้อย่างไร้รอยต่อตลอด 24 ชม.<br>
                     </p>
                 </div>
             </div>
-                <div class=" position-absolute bottom-0 end-0 mt-5">
-                        <img src="./images/part-1/Frame.png" class="content-logo-img-3 mt-5">
-                </div>
+            <div class=" position-absolute bottom-0 end-0 mt-5 ">
+                <img src=" ./images/part-1/Frame.png" class="content-logo-img-3 mt-5" id="component2">
             </div>
-
         </div>
+
+
 
         <!-- Part 2 Vision-->
         <div>
@@ -100,12 +106,12 @@
                 </p>
             </div>
 
-            <div class="d-md-inline-flex flex-row bd-highlight  justify-content-center col-lg-12">
-                <div class="p-2 bd-highlight">
+            <div class="d-lg-inline-flex bd-highlight justify-content-lg-center col-lg-12">
+                <div class="p-2 align-self-center">
                     <img src="./images/part-2/FPPT.png" alt="">
                     <p class="fs-2 text-center">FPPT</p>
                 </div>
-                <div class="p-2 bd-highlight">
+                <div class="p-2 align-self-center">
                     <img src="./images/part-2/ABBC.png" alt="">
                     <p class="fs-2 text-center">ABBC</p>
                 </div>
@@ -130,7 +136,7 @@
             </div>
 
             <div class="position-absolute top-50 start-50 translate-middle mt-5 pt-4 text-center">
-                <div class="d-md-inline-flex  flex-nowrap flex-row bd-highlight mt-5 " style="height: 700px;">
+                <div class="d-md-inline-flex  flex-nowrap flex-row bd-highlight mt-5" style="height: 700px;">
                     <div class="mx-4 d-flex align-self-end mb-3 ">
                         <div class="card-1">
                             <img src="./images/part-3/Vector.png" class="center mt-5">
@@ -152,8 +158,8 @@
 
                         </div>
                     </div>
-                    <div class="mx-4 d-flex align-self-center mb-3">
-                        <div class="card-2">
+                    <div class="mx-4 d-flex align-self-center mb-2">
+                        <div class="card-2 pt-5">
                             <img src="./images/part-3/Group (2).png" class="center mt-5">
                             <p class="text-white fs-2 mt-3">ระบบบริหารจัดการดิจิตอลแอสเซท</p>
                             <p class="text-white">ให้บริการด้าน เกมออนไลน์ ออกแบบ <br>และพัฒนาระบบซอฟต์แวร์<br>
@@ -174,7 +180,8 @@
                             <img src="./images/part-3/Group (3).png" class="center mt-5">
                             <p class="text-white fs-2 mt-3">ระบบบริหารจัดการดิจิตอลแอสเซทต่างๆ </p>
                             <p class="text-white ">ด้วยการนำเทคโนโลยีของบริษัทต่อ<br>ยอดธุรกิจกลุ่มอุตสาหกรรม<br>
-                                ที่มีการเติบโตอย่างต่อเนื่อง ได้แก่ <br>ด้านการเงิน เทคโนโลยี<br> การบริหารจัดเก็บข้อมูล
+                                ที่มีการเติบโตอย่างต่อเนื่อง ได้แก่ <br>ด้านการเงิน เทคโนโลยี<br>
+                                การบริหารจัดเก็บข้อมูล
                                 E-sport<br>
                                 Game Metaverse VR AR <br>และการตลาดรูปแบบใหม่
                             </p>
@@ -190,8 +197,79 @@
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
+        <!-- Part 4 Footer-->
+        <footer class="text-white pt-5 pb-4" style="background-color:rgba(22, 32, 105, 1);">
+
+            <div class="container text-center">
+
+                <div class="d-md-inline-flex justify-content-between" style="width: 100%;">
+
+                    <div class="mx-1 mt-3 text-center">
+                        <h5 class="mb-3 font-weight-bold text-white text-start" width="700" font-size="40px">
+                            ร่วมเป็นส่วนหนึ่งกับ</h5>
+                        <img src="./images/logo/logo2.png" class="float-start" width="192px"
+                            height="39px left-173px top-3960px">
+                        <br>
+                        <br>
+                        <br>
+                        <p class="document text-start">มาร่วมเป็นส่วนหนึ่งขององค์กรที่ทันสมัย
+                            และไม่หยุดนิ่ง<br>
+                            คอร์ แอสเซทเปิดโอกาสเสมอให้กับความ <br>
+                            คิดริเริ่มสร้างสรรค์ พร้อมและกล้าเปลี่ยนแปลงโลก <br>
+                            และสังคมด้วยเทคโนโลยี ความรู้ที่ไร้กรอบ<br>
+                            ให้คุณมีความคิดใหม่ๆตลอดเวลาและสนับสนุนทุก<br>
+                            โปรเจคคุณภาพ เพื่อส่งต่อผลลัพธ์ที่ดีสู่อนาคต
+                        </p>
+                    </div>
+
+                    <div class="mx-1 mt-3 text-start">
+                        <h5 class="mb-3 font-weight-bold text-white">เมนู</h5>
+                        <p class="menu">Home<br>
+                        <p class="menu2">Examples<br>
+                        <p class="menu3">Pricing<br>
+                        <p class="menu4">Updates<br>
+                        </p>
+                    </div>
+
+                    <div class="mx-1 mt-3 text-start">
+                        <h5 class="mb-2 font-weight-bold text-white">ติดต่อสอบถาม</h5>
+                        <h6 class="mb-4 font-weight-bold text-white">สินค้าหรือบริการ คอร์ แอสเซท</h6>
+
+                        <div class="address col-xl-12 text-start ">
+                            บริษัท คอร์ แอสเซท จำกัด <br>
+                            177/22 หมู่ที่ 3 ตำบลท่าโพธิ์ อำเภอเมืองพิษณุโลก <br>
+                            จังหวัดพิษณุโลก 65000 <br>
+                            Email : coreasset.ca@gmail.com <br>
+                            Tel : 06-2935-6323<br>
+                            FB : https://www.facebook.com/CoreAssetDigital <br>
+                            Line : @coreasset
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <p class="text-center mt-5">Copyright © 2022 www.coreasset.fund All rights reserved.</p>
+    </div>
+
+
+
+    </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var type = new Typed(".auto-type", {
+            strings: ["CLOUD ORGANIZE RECOGNIZE ECOSYSTEM"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+            cursorChar: '|',
+        })
+    </script>
 </body>
 
 </html>

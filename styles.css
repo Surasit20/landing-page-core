@@ -33,19 +33,29 @@
 
 .content-logo-img-3 {
   margin-right: 300px;
+  margin-bottom: 50px;
+  width: 12rem;
 }
 
 .content-text-header-1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 500;
   font-size: 40px;
   line-height: 37px;
   color: white;
   margin-left: 15rem;
   margin-bottom: 4rem;
 }
-
+.content-text-header-2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 37px;
+  color: white;
+  margin-bottom: 10rem;
+}
 .img-part-1 {
   width: 50%;
   bottom: 10000px;
@@ -99,4 +109,44 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.hidden-component {
+  visibility: hidden;
+}
+
+/* slide char*/
+
+span {
+  color: #fff;
+}
+
+.font-responsive {
+  font: 1em sans-serif;
+}
+
+/* footer*/
+.document {
+  font-size: 14px;
+}
+
+.menu {
+  font-size: 14px;
+}
+
+.menu2 {
+  font-size: 14px;
+}
+
+.menu3 {
+  font-size: 14px;
+}
+
+.menu4 {
+  font-size: 14px;
+}
+
+.address {
+  width: 300px;
+  font-size: 14px;
 }
