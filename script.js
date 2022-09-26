@@ -90,9 +90,11 @@ const addContentFPPT = () => {
   let element1 = document.getElementById('text-context-fppt-wide');
   let element2 = document.getElementById('text-context-fppt-mobile');
   let element3 = document.getElementById('text-context-abbc-mobile');
+  element1.innerHTML = '';
   element3.classList.add('text-center', 'fs-6');
   element2.classList.add('text-center', 'fs-6');
-  element1.innerHTML = '';
+  element3.innerHTML =
+    'ด้วยการนำ<br>   <b style="color:rgba(15, 26, 92, 1); font-family: Anantason-Medium; font-size: 1rem;">เทคโนโลยี ABBC (เอดับเบิ้ลบีซี)</b><br>เข้ามาบริหารจัดการธุรกิจให้เกิดการ Sharing Economic บน Eco system<br>ของตนเอง เพื่อสร้างสังคมแห่งการแบ่งปัน<br>พร้อมทั้งต่อยอดธุรกิจในหลากหลายแพลตฟอร์ม ยกระดับธุรกิจให้เติบโต<br>และสร้างรากฐานที่มั่นคง เตรียมศักยภาพความพร้อมในการแข่งขัน<br>ที่เพิ่มขึ้นในอนาคต';
   element2.innerHTML =
     ' คอร์ แอสเซท มุ่งเน้นบริหารจัดการดิจิตอลแอสเซท<br>   <b style="color:rgba(15, 26, 92, 1); font-family: Anantason-Medium; font-size: 1rem;">สร้างระบบด้วยแนวคิด FPPT (เอฟ ดับเบิ้ลพี ที)</b><br>เพื่อจัดการบริหารธุรกิจและส่งเสริมการสร้างผลิตภัณฑ์<br>ในเครือของบริษัทคอร์ แอสเซท';
   element2.classList.add('text-center');
