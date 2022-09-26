@@ -1,3 +1,32 @@
+@font-face {
+  font-family: Anantason-Black;
+  src: url('./fonts/Anantason-Black.otf');
+}
+
+@font-face {
+  font-family: Anantason-Light;
+  src: url('./fonts/Anantason-Light.otf');
+}
+@font-face {
+  font-family: Anantason-SemiBold;
+  src: url('./fonts/Anantason-SemiBold.otf');
+}
+
+@font-face {
+  font-family: Anantason-Medium;
+  src: url('./fonts/Anantason-Medium.otf');
+}
+
+div {
+  font-family: Anantason-SemiBold;
+}
+p {
+  font-family: Anantason-Light;
+}
+
+.container-1 {
+  width: 100%;
+}
 .navbar-color {
   background-color: #151f68;
 }
@@ -31,7 +60,6 @@
 }
 
 .content-text-header-1 {
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -41,10 +69,8 @@
   margin-bottom: 4rem;
 }
 .content-text-header-2 {
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 37px;
   color: white;
   margin-bottom: 10rem;
@@ -116,6 +142,11 @@
   position: absolute;
   top: 500px;
 }
+
+.content-text {
+  line-height: 2rem;
+}
+
 /*--------------------------------slide char-------------------------------*/
 
 span {
