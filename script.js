@@ -42,23 +42,26 @@ function scrollFunction() {
 }
 //size screnn for change
 window.addEventListener('resize', function () {
-  console.log(window.innerWidth);
   if (window.innerWidth < 1400) {
     removeComponent();
     addFont();
 
+    if (window.innerWidth < 1200) {
+      addBackGround();
+    }
     if (window.innerWidth < 991) {
       addContentFPPT();
-      addBackGround();
+    }
+
+    if (window.innerWidth >= 1200) {
+      removeBackGround();
+    }
+    if (window.innerWidth > 991) {
+      removeContentFPPT();
     }
   } else {
     addComponent();
     removeFont();
-
-    if (window.innerWidth > 991) {
-      removeContentFPPT();
-      removeBackGround();
-    }
   }
 });
 
@@ -105,8 +108,11 @@ const removeFont = () => {
 
 const addBackGround = () => {
   //logic change background
-  document.getElementById('bgId').src = './images/part-3-mobile/bg3-mobile.png';
-  let element1 = document.getElementById('bgId');
+  document.getElementById('bgId-3').src =
+    './images/part-3-mobile/bg3-mobile.png';
+
+  document.getElementById('bgId-1').src = './images/part-1/Group 1.png';
+  let element1 = document.getElementById('bgId-3');
   let element2 = document.getElementById('part3mobile');
   element1.classList.add('content-bg-img-2');
   element1.classList.remove('content-bg-img-1');
@@ -116,8 +122,9 @@ const addBackGround = () => {
 
 const removeBackGround = () => {
   //logic change background
-  document.getElementById('bgId').src = './images/part-3/bgpart3.png';
-  let element1 = document.getElementById('bgId');
+  document.getElementById('bgId-3').src = './images/part-3/bgpart3.png';
+  document.getElementById('bgId-1').src = './images/part-1/bg1.png';
+  let element1 = document.getElementById('bgId-3');
   let element2 = document.getElementById('part3mobile');
   element1.classList.add('content-bg-img-1');
   element1.classList.remove('content-bg-img-2');
