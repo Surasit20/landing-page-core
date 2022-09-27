@@ -3,12 +3,10 @@ window.addEventListener('resize', function () {
   if (window.innerWidth < 1400) {
     removeComponent();
     addFont();
-    if (window.innerWidth < 768) {
-      addBackGround();
-    }
-    if (window.innerWidth < 1018) {
+
+    if (window.innerWidth < 1019) {
       addContentFPPT();
-      console.log('test1');
+      addBackGround();
     }
   } else {
     addComponent();
@@ -77,7 +75,7 @@ const addBackGround = () => {
 
 const removeBackGround = () => {
   //logic change background
-  document.getElementById('bgId').src = './images/part-3/bg3.png';
+  document.getElementById('bgId').src = './images/part-3/bgpart3.png';
   let element1 = document.getElementById('bgId');
   let element2 = document.getElementById('part3mobile');
   element1.classList.add('content-bg-img-1');
@@ -94,7 +92,7 @@ const addContentFPPT = () => {
   element3.classList.add('text-center', 'fs-6');
   element2.classList.add('text-center', 'fs-6');
   element3.innerHTML =
-    'ด้วยการนำ<br>   <b style="color:rgba(15, 26, 92, 1); font-family: Anantason-Medium; font-size: 1rem;">เทคโนโลยี ABBC (เอดับเบิ้ลบีซี)</b><br>เข้ามาบริหารจัดการธุรกิจให้เกิดการ Sharing Economic บน Eco system<br>ของตนเอง เพื่อสร้างสังคมแห่งการแบ่งปัน<br>พร้อมทั้งต่อยอดธุรกิจในหลากหลายแพลตฟอร์ม ยกระดับธุรกิจให้เติบโต<br>และสร้างรากฐานที่มั่นคง เตรียมศักยภาพความพร้อมในการแข่งขัน<br>ที่เพิ่มขึ้นในอนาคต';
+    'ด้วยการนำ <b style="color:rgba(15, 26, 92, 1); font-family: Anantason-Medium; font-size: 1rem;">เทคโนโลยี ABBC (เอดับเบิ้ลบีซี)</b><br>เข้ามาบริหารจัดการธุรกิจให้เกิดการ Sharing Economic บน Eco system<br>ของตนเอง เพื่อสร้างสังคมแห่งการแบ่งปัน<br>พร้อมทั้งต่อยอดธุรกิจในหลากหลายแพลตฟอร์ม ยกระดับธุรกิจให้เติบโต<br>และสร้างรากฐานที่มั่นคง เตรียมศักยภาพความพร้อมในการแข่งขัน<br>ที่เพิ่มขึ้นในอนาคต';
   element2.innerHTML =
     ' คอร์ แอสเซท มุ่งเน้นบริหารจัดการดิจิตอลแอสเซท<br>   <b style="color:rgba(15, 26, 92, 1); font-family: Anantason-Medium; font-size: 1rem;">สร้างระบบด้วยแนวคิด FPPT (เอฟ ดับเบิ้ลพี ที)</b><br>เพื่อจัดการบริหารธุรกิจและส่งเสริมการสร้างผลิตภัณฑ์<br>ในเครือของบริษัทคอร์ แอสเซท';
   element2.classList.add('text-center');
@@ -110,6 +108,8 @@ const removeContentFPPT = () => {
   element2.innerHTML = '';
   element1.innerHTML =
     ' คอร์ แอสเซท มุ่งเน้นบริหารจัดการดิจิตอลแอสเซท<br>   <b style="color:rgba(15, 26, 92, 1); font-family: Anantason-Medium; font-size: 1.5rem;">สร้างระบบด้วยแนวคิด FPPT (เอฟ ดับเบิ้ลพี ที)</b><br>เพื่อจัดการบริหารธุรกิจและส่งเสริมการสร้างผลิตภัณฑ์<br>ในเครือของบริษัทคอร์ แอสเซท';
+  element3.innerHTML =
+    'ด้วยการนำ <b style="color:rgba(15, 26, 92, 1); font-family: Anantason-Medium; font-size: 1.5rem;">เทคโนโลยี ABBC (เอดับเบิ้ลบีซี)</b><br>เข้ามาบริหารจัดการธุรกิจให้เกิดการ Sharing Economic บน Eco system<br>ของตนเอง เพื่อสร้างสังคมแห่งการแบ่งปัน<br>พร้อมทั้งต่อยอดธุรกิจในหลากหลายแพลตฟอร์ม ยกระดับธุรกิจให้เติบโต<br>และสร้างรากฐานที่มั่นคง เตรียมศักยภาพความพร้อมในการแข่งขัน<br>ที่เพิ่มขึ้นในอนาคต';
 };
 /*
 const addFlexContent = () => {
