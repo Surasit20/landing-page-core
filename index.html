@@ -18,40 +18,45 @@
 <body>
     <div class="">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-color">
-            <div class="container-fluid ">
-                <a class="navbar-brand" href="#">
-                    <img src=".\images/logo/logo2.png" alt="" width="192" height="39"
-                        class="d-inline-block align-text-top">
+        <div class="position-fixed" style="z-index: 2; width: 100%;">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-color ">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="#home">
+                        <img src=".\images/logo/logo2.png" alt="" width="192" height="39"
+                            class="d-inline-block align-text-top">
 
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="">
-                        <img src="./images/icon/Vector.png">
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav mx-4">
-                        <li class="nav-item  mx-5">
-                            <a class="nav-link active" aria-current="page" href="#"
-                                style="font-family: Anantason-Light;">Home</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link" href="#" style="font-family: Anantason-Light;">Company</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link" href="#" style="font-family: Anantason-Light;">Product</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link" href="#" style="font-family: Anantason-Light;">Contact</a>
-                        </li>
-                    </ul>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="">
+                            <img src="./images/icon/Vector.png">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav mx-4">
+                            <li class="nav-item  mx-5">
+                                <a id="home-nav" class="nav-link active" aria-current="page" href="#home"
+                                    style="font-family: Anantason-Light;">Home</a>
+                            </li>
+                            <li class="nav-item mx-5">
+                                <a id="company-nav" class="nav-link" href="#company"
+                                    style="font-family: Anantason-Light;">Company</a>
+                            </li>
+                            <li class="nav-item mx-5">
+                                <a id="product-nav" class="nav-link" href="#product"
+                                    style="font-family: Anantason-Light;">Product</a>
+                            </li>
+                            <li class="nav-item mx-5">
+                                <a id="contact-nav" class="nav-link" href="#contact"
+                                    style="font-family: Anantason-Light;">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
         <!-- Part 1 Intro-->
-        <div class="position-relative">
+        <div class="position-relative" id="home">
             <img src="./images/part-1/bg1.png" class="content-bg-img-1">
 
             <div class="position-absolute top-0 start-50 translate-middle d-inline">
@@ -92,17 +97,17 @@
 
 
         <!-- Part 2 Vision-->
-        <div class="position-relative">
+        <div class="position-relative" id="company">
             <div class="position-absolute top-50 end-0 translate-middle-y component" style="bottom: 0px; z-index: -1;">
-                <img src="./images/part-2/Frame (3).png" class="mb-5" style="z-index: -999;">
+                <img src="./images/part-2/Frame (3).png" class="mb-5" style="z-index: -1;">
             </div>
             <div class="position-absolute top-0 start-0 component">
-                <img src="./images/part-2/Vector (3).png" class="mb-5" style="z-index: -999;">
+                <img src="./images/part-2/Vector (3).png" class="mb-5" style="z-index: -1;">
             </div>
             <div class="position-absolute bottom-0 start-0 component" style="z-index: -1;">
-                <img src="./images/part-2/Vector (1).png" class="mb-5" style="z-index: -999;">
+                <img src="./images/part-2/Vector (1).png" class="mb-5" style="z-index: -1;">
             </div>
-            <div class="d-lg-inline-flex bd-highlight justify-content-lg-center col-lg-12 mb-0 ">
+            <div class="d-lg-inline-flex justify-content-between justify-content-lg-center col-lg-12 mb-0 ">
                 <div class="p-2 align-self-center mx-5 ">
                     <p class="text-start fs-5 content-text" id="text-context-fppt-wide">
                         คอร์ แอสเซท มุ่งเน้นบริหารจัดการดิจิตอลแอสเซท<br>
@@ -118,7 +123,7 @@
                 </div>
                 <div class="mx-5">
                 </div>
-                <div class="mx-5">
+                <div class="mx-5 align-self-center">
                     <img src="./images/part-2/FPPT.png" alt="" class="img-fluid">
                 </div>
 
@@ -134,10 +139,11 @@
                 style="background-color: rgba(249, 249, 249, 0.67);">
 
                 <div class="p-2 align-self-start mx-5">
-                    <div>
-                        <img src="./images/part-2/ABBC.png" alt="" class="img-fluid">
-                    </div>
+
+                    <img src="./images/part-2/ABBC.png" alt="" class="img-fluid">
+
                 </div>
+
                 <div class="p-2 align-self-center mx-5">
                     <p class="text-start fs-5 content-text" id="text-context-abbc-mobile">
                         ด้วยการนำ
@@ -153,7 +159,7 @@
         <!-- Part 3 Product&Service-->
         <div class="my-5">
         </div>
-        <div class="position-relative">
+        <div class="position-relative" id="product">
             <img src="./images/part-3/bgpart3.png" class="content-bg-img-1" id="bgId">
 
             <div class="position-absolute top-0 start-50 translate-middle-x mt-5 text-center">
@@ -235,7 +241,7 @@
             </div>
         </div>
         <!-- Part 4 Footer-->
-        <footer class="text-white pt-5 pb-4" style="background-color:rgba(22, 32, 105, 1);">
+        <footer class="text-white pt-5 pb-4" style="background-color:rgba(22, 32, 105, 1);" id="contact">
 
             <div class="container text-center">
 

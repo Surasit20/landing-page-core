@@ -1,10 +1,53 @@
+//active with menu bar
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  const onActiveMenu = (name) => {
+    elementsName.forEach((item) => {
+      let element = document.getElementById(item);
+      if (item == name) {
+        element.classList.add('active');
+      } else {
+        element.classList.remove('active');
+      }
+    });
+  };
+
+  //list menu
+  let elementsName = ['home-nav', 'company-nav', 'product-nav', 'contact-nav'];
+  //home
+  if (document.documentElement.scrollTop < 881) {
+    onActiveMenu('home-nav');
+  }
+  //company
+  else if (
+    document.documentElement.scrollTop > 880 &&
+    document.documentElement.scrollTop < 1683
+  ) {
+    onActiveMenu('company-nav');
+  }
+  //product
+  else if (
+    document.documentElement.scrollTop > 1683 &&
+    document.documentElement.scrollTop < 2000
+  ) {
+    onActiveMenu('product-nav');
+  }
+  //contact
+  else if (document.documentElement.scrollTop > 2000) {
+    onActiveMenu('contact-nav');
+  }
+}
 //size screnn for change
 window.addEventListener('resize', function () {
+  console.log(window.innerWidth);
   if (window.innerWidth < 1400) {
     removeComponent();
     addFont();
 
-    if (window.innerWidth < 1019) {
+    if (window.innerWidth < 991) {
       addContentFPPT();
       addBackGround();
     }
@@ -12,11 +55,9 @@ window.addEventListener('resize', function () {
     addComponent();
     removeFont();
 
-    if (window.innerWidth > 768) {
-      removeBackGround();
-    }
-    if (window.innerWidth > 1018) {
+    if (window.innerWidth > 991) {
       removeContentFPPT();
+      removeBackGround();
     }
   }
 });
@@ -83,7 +124,7 @@ const removeBackGround = () => {
   element2.classList.add('top-50', 'mt-5', 'pt-5');
   element2.classList.remove('position-mobile');
 };
-
+// reverse component at content fppt
 const addContentFPPT = () => {
   let element1 = document.getElementById('text-context-fppt-wide');
   let element2 = document.getElementById('text-context-fppt-mobile');
@@ -111,9 +152,3 @@ const removeContentFPPT = () => {
   element3.innerHTML =
     'ด้วยการนำ <b style="color:rgba(15, 26, 92, 1); font-family: Anantason-Medium; font-size: 1.5rem;">เทคโนโลยี ABBC (เอดับเบิ้ลบีซี)</b><br>เข้ามาบริหารจัดการธุรกิจให้เกิดการ Sharing Economic บน Eco system<br>ของตนเอง เพื่อสร้างสังคมแห่งการแบ่งปัน<br>พร้อมทั้งต่อยอดธุรกิจในหลากหลายแพลตฟอร์ม ยกระดับธุรกิจให้เติบโต<br>และสร้างรากฐานที่มั่นคง เตรียมศักยภาพความพร้อมในการแข่งขัน<br>ที่เพิ่มขึ้นในอนาคต';
 };
-/*
-const addFlexContent = () => {
-  let element1 = document.getElementById('flex-content');
-  element1.classList.add('flex-column-reverse');
-};
-*/
