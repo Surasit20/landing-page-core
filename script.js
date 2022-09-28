@@ -1,9 +1,9 @@
 //active with menu bar
-window.onscroll = function () {
+window.onscroll = () => {
   scrollFunction();
 };
 
-function scrollFunction() {
+const scrollFunction = () => {
   const onActiveMenu = (name) => {
     elementsName.forEach((item) => {
       let element = document.getElementById(item);
@@ -39,9 +39,17 @@ function scrollFunction() {
   else if (document.documentElement.scrollTop > 2000) {
     onActiveMenu('contact-nav');
   }
-}
+};
 //size screnn for change
-window.addEventListener('resize', function () {
+window.addEventListener('resize', () => {
+  responsive();
+});
+
+window.onload = () => {
+  responsive();
+};
+
+const responsive = () => {
   if (window.innerWidth < 1400) {
     removeComponent();
     addFont();
@@ -63,8 +71,7 @@ window.addEventListener('resize', function () {
   if (window.innerWidth > 991) {
     removeContentFPPT();
   }
-});
-
+};
 const removeComponent = () => {
   //logic remove image component
   let element = document.getElementsByClassName('component');
